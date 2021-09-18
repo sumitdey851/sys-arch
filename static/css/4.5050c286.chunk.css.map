@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/components/StartingPage/StartingPageContent.module.css"],"names":[],"mappings":"AAAA,qCACE,gBAAiB,CACjB,iBACF,CAEA,wCACE,cACF","file":"4.5050c286.chunk.css","sourcesContent":[".starting {\n  margin: 3rem auto;\n  text-align: center;\n}\n\n.starting h1 {\n  font-size: 5rem;\n}"]}
