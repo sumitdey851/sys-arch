@@ -1,13 +1,21 @@
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 
 import classes from './AuthForm.module.css';
+import AppAuth from '../../store/authContext';
 
 const AuthForm = () => {
+  const ctx = useContext(AppAuth);
   const [isLogin, setIsLogin] = useState(true);
+
+  console.log(ctx);
 
   const switchAuthModeHandler = () => {
     setIsLogin((prevState) => !prevState);
   };
+
+  const authHandler = async () => {
+
+  }
 
   return (
     <section className={classes.auth}>
@@ -22,7 +30,7 @@ const AuthForm = () => {
           <input type='password' id='password' required />
         </div>
         <div className={classes.actions}>
-          <button>{isLogin ? 'Login' : 'Create Account'}</button>
+          <button onClick={authHandler}>{isLogin ? 'Login' : 'Create Account'}</button>
           <button
             type='button'
             className={classes.toggle}

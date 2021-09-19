@@ -5,6 +5,7 @@ import Layout from "./components/Layout/Layout";
 import AuthPage from "./pages/AuthPage";
 // import HomePage from "./pages/HomePage";
 import LoadingSpinner from "./components/LoadingSpinner/LoadingSpinner";
+import AppAuth from "./store/authContext";
 
 const HomePage = React.lazy(() => import("./pages/HomePage"));
 const UserProfile = React.lazy(() =>
@@ -13,21 +14,23 @@ const UserProfile = React.lazy(() =>
 
 function App() {
   return (
-    <Layout>
-      <Suspense fallback={<LoadingSpinner />}>
-        <Switch>
-          <Route path="/" exact>
-            <HomePage />
-          </Route>
-          <Route path="/auth">
-            <AuthPage />
-          </Route>
-          <Route path="/profile">
-            <UserProfile />
-          </Route>
-        </Switch>
-      </Suspense>
-    </Layout>
+    <AppAuth.Provider>
+      <Layout>
+        <Suspense fallback={<LoadingSpinner />}>
+          <Switch>
+            <Route path="/" exact>
+              <HomePage />
+            </Route>
+            <Route path="/auth">
+              <AuthPage />
+            </Route>
+            <Route path="/profile">
+              <UserProfile />
+            </Route>
+          </Switch>
+        </Suspense>
+      </Layout>
+    </AppAuth.Provider>
   );
 }
 
