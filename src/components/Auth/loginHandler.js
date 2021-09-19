@@ -1,6 +1,7 @@
 import axios from "axios";
 
 const loginHandler = async (appAuthToken, enteredEmail, enteredPassword) => {
+  console.log("Calling login API");
   const response = await axios({
     method: "post",
     url: "https://sys-arch-security-layer.herokuapp.com/sysArch/api",
