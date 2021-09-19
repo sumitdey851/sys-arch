@@ -9,7 +9,6 @@ const AuthForm = () => {
   const [isLogin, setIsLogin] = useState(true);
   const [userAuthToken, setUserAuthToken] = useState("");
   const [userData, setUserData] = useState({});
-  // const [isUserAuthenticated, setIsUserAuthenticated] = useState(false);
 
   const emailInputRef = useRef();
   const passwordInputRef = useRef();
@@ -33,7 +32,6 @@ const AuthForm = () => {
         const data = resData.data.data;
         setUserAuthToken(data.token);
         setUserData(data.user);
-        // setIsUserAuthenticated(true);
       } catch (error) {
         alert("Invalid Credentials");
       }
