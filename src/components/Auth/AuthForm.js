@@ -9,6 +9,7 @@ const AuthForm = () => {
   const [isLogin, setIsLogin] = useState(true);
   const [userAuthToken, setUserAuthToken] = useState("");
   const [userData, setUserData] = useState({});
+  const [isUserAuthenticated, setIsUserAuthenticated] = useState(false);
 
   const emailInputRef = useRef();
   const passwordInputRef = useRef();
@@ -25,14 +26,18 @@ const AuthForm = () => {
       try {
         const appAuthToken = getCookie("appAuthToken");
         const resData = await loginHandler(appAuthToken, enteredEmail, enteredPassword);
-        if (resData.status !== "success") throw new Error("Unauthorized");
+        if (resData.status !== "success") {
+          throw new Error("Unauthorized");
+        }
+        
         const data = resData.data.data;
         setUserAuthToken(data.token);
         setUserData(data.user);
+        setIsUserAuthenticated(true);
       } catch (error) {
         alert("Invalid Credentials");
       }
-      console.log(enteredEmail, enteredPassword);
+      // console.log(enteredEmail, enteredPassword);
     }
   };
 
