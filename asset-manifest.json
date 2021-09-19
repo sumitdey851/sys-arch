@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/sys-arch/static/css/main.122f00e3.chunk.css",
-    "main.js": "/sys-arch/static/js/main.aa3b5b3d.chunk.js",
-    "main.js.map": "/sys-arch/static/js/main.aa3b5b3d.chunk.js.map",
+    "main.js": "/sys-arch/static/js/main.aaefd99e.chunk.js",
+    "main.js.map": "/sys-arch/static/js/main.aaefd99e.chunk.js.map",
     "runtime-main.js": "/sys-arch/static/js/runtime-main.ed7a512d.js",
     "runtime-main.js.map": "/sys-arch/static/js/runtime-main.ed7a512d.js.map",
-    "static/js/2.2af55203.chunk.js": "/sys-arch/static/js/2.2af55203.chunk.js",
-    "static/js/2.2af55203.chunk.js.map": "/sys-arch/static/js/2.2af55203.chunk.js.map",
+    "static/js/2.a662febb.chunk.js": "/sys-arch/static/js/2.a662febb.chunk.js",
+    "static/js/2.a662febb.chunk.js.map": "/sys-arch/static/js/2.a662febb.chunk.js.map",
     "static/css/3.12f0a836.chunk.css": "/sys-arch/static/css/3.12f0a836.chunk.css",
     "static/js/3.75d03c99.chunk.js": "/sys-arch/static/js/3.75d03c99.chunk.js",
     "static/js/3.75d03c99.chunk.js.map": "/sys-arch/static/js/3.75d03c99.chunk.js.map",
@@ -17,12 +17,12 @@
     "static/css/3.12f0a836.chunk.css.map": "/sys-arch/static/css/3.12f0a836.chunk.css.map",
     "static/css/4.5050c286.chunk.css.map": "/sys-arch/static/css/4.5050c286.chunk.css.map",
     "static/css/main.122f00e3.chunk.css.map": "/sys-arch/static/css/main.122f00e3.chunk.css.map",
-    "static/js/2.2af55203.chunk.js.LICENSE.txt": "/sys-arch/static/js/2.2af55203.chunk.js.LICENSE.txt"
+    "static/js/2.a662febb.chunk.js.LICENSE.txt": "/sys-arch/static/js/2.a662febb.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.ed7a512d.js",
-    "static/js/2.2af55203.chunk.js",
+    "static/js/2.a662febb.chunk.js",
     "static/css/main.122f00e3.chunk.css",
-    "static/js/main.aa3b5b3d.chunk.js"
+    "static/js/main.aaefd99e.chunk.js"
   ]
 }
