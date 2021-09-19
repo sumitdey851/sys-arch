@@ -1,0 +1,2 @@
+(this["webpackJsonpsys-arch"]=this["webpackJsonpsys-arch"]||[]).push([[4],{66:function(t,n,s){t.exports={starting:"StartingPageContent_starting__3dg_O"}},69:function(t,n,s){"use strict";s.r(n);var e=s(66),c=s.n(e),r=s(0),a=function(){return Object(r.jsx)("section",{className:c.a.starting,children:Object(r.jsx)("h1",{children:"Welcome on Board!"})})};n.default=function(){return Object(r.jsx)(a,{})}}}]);
+//# sourceMappingURL=4.4e82ed97.chunk.js.map
